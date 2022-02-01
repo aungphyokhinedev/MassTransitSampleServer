@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/WeatherAPI.csproj": {}
+  },
+  "projects": {
+    "/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/WeatherAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/WeatherAPI.csproj",
+        "projectName": "WeatherAPI",
+        "projectPath": "/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/WeatherAPI.csproj",
+        "packagesPath": "/home/aung/.nuget/packages/",
+        "outputPath": "/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/aung/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MassTransit.Analyzers": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/152/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
