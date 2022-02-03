@@ -20,9 +20,9 @@ namespace WeatherAPI.Controllers
         }
 
         [Route("TestDb")]
-        public async Task<AplusListResponse> GetData()
+        public async Task<AplusListResponse> GetData(int page, int pageSize)
         {
-            var result = await _db.GetListAsync(new AplusListRequest(tables:"users", pageSize: 1, page: 1){
+            var result = await _db.GetListAsync(new AplusListRequest(tables:"users", pageSize: pageSize, page: page){
             });
            
             return result;

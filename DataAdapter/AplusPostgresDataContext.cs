@@ -34,7 +34,7 @@ public class AplusPostgresDataContext : IAplusDataContext
 
                 long total = 0;
                 if(value.Count().IsPositiveNumber()){
-                    total = value.SingleOrDefault().total_rows;
+                    total = value.First().total_rows;
                   
                 }
                 else{
@@ -42,15 +42,15 @@ public class AplusPostgresDataContext : IAplusDataContext
                     if(request.where.IsNotNullOrEmpty()){
                         query = $"{query} where {request.where};";
                     }
-                    await connection.QueryAsync(query); 
-                    total = value.SingleOrDefault().total_rows;
+                    var countvalue = await connection.QueryAsync(query); 
+                    total = countvalue.SingleOrDefault().total_rows;
                 }
                
            
             return  new AplusListResponse{
                 total = total,
-                page = 1,
-                pageSize = 20,
+                page = request.page,
+                pageSize = request.pageSize,
                 rows = value,
             };
         } 
