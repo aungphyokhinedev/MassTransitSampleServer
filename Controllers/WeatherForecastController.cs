@@ -20,12 +20,12 @@ namespace WeatherAPI.Controllers
         }
 
         [Route("TestDb")]
-        public async Task<IEnumerable<string>> GetData()
+        public async Task<AplusListResponse> GetData()
         {
             var result = await _db.GetListAsync(new AplusListRequest(tables:"users", pageSize: 1, page: 1){
             });
            
-            return new List<string>();
+            return result;
         }
 
         [HttpGet]

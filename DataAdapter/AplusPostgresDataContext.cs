@@ -32,18 +32,18 @@ public class AplusPostgresDataContext : IAplusDataContext
                
                 var value = await connection.QueryAsync(query); 
 
-                int total = 0;
+                long total = 0;
                 if(value.Count().IsPositiveNumber()){
-                   
-                    total = int.Parse(value.First().GetPropValue(value.First(),"total_rows"));
+                    total = value.SingleOrDefault().total_rows;
+                  
                 }
                 else{
-                    query = $"select count(*) from  {request.tables}";
+                    query = $"select count(*) as total_rows from  {request.tables}";
                     if(request.where.IsNotNullOrEmpty()){
                         query = $"{query} where {request.where};";
                     }
                     await connection.QueryAsync(query); 
-                    total = int.Parse(value.First()[0]);
+                    total = value.SingleOrDefault().total_rows;
                 }
                
            
