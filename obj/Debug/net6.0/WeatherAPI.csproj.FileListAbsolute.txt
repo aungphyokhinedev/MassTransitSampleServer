@@ -74,3 +74,5 @@
 /home/aung/Projects/MassTransitMediator/MassTransitSampleServer/obj/Debug/net6.0/ref/WeatherAPI.dll
 /home/aung/Projects/MassTransitMediator/MassTransitSampleServer/obj/Debug/net6.0/WeatherAPI.pdb
 /home/aung/Projects/MassTransitMediator/MassTransitSampleServer/obj/Debug/net6.0/WeatherAPI.genruntimeconfig.cache
+/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/bin/Debug/net6.0/Npgsql.dll
+/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/bin/Debug/net6.0/Dapper.dll

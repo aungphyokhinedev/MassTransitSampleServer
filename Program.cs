@@ -3,6 +3,9 @@ using System.Reflection;
 using WeatherAPI;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<IAplusDataContext,AplusPostgresDataContext>();
+
 builder.Services.AddMassTransit(x =>
             {
                 //x.AddConsumers(Assembly.GetExecutingAssembly());

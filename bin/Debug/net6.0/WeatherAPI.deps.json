@@ -8,9 +8,11 @@
     ".NETCoreApp,Version=v6.0": {
       "WeatherAPI/1.0.0": {
         "dependencies": {
+          "Dapper": "2.0.123",
           "MassTransit.Analyzers": "7.2.2",
           "MassTransit.AspNetCore": "7.3.1",
           "MassTransit.RabbitMQ": "7.3.1",
+          "Npgsql": "6.0.3",
           "Swashbuckle.AspNetCore": "6.1.5"
         },
         "runtime": {
@@ -25,6 +27,14 @@
           "lib/netstandard2.0/Automatonymous.dll": {
             "assemblyVersion": "5.1.3.0",
             "fileVersion": "5.1.3.0"
+          }
+        }
+      },
+      "Dapper/2.0.123": {
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.123.33578"
           }
         }
       },
@@ -180,6 +190,17 @@
           }
         }
       },
+      "Npgsql/6.0.3": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.dll": {
+            "assemblyVersion": "6.0.3.0",
+            "fileVersion": "6.0.3.0"
+          }
+        }
+      },
       "RabbitMQ.Client/6.2.2": {
         "dependencies": {
           "System.Memory": "4.5.4",
@@ -234,6 +255,7 @@
       "System.Memory/4.5.4": {},
       "System.Reflection.Emit/4.7.0": {},
       "System.Reflection.Emit.Lightweight/4.7.0": {},
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "System.Text.Json/5.0.2": {},
       "System.Threading.Channels/4.7.1": {},
       "System.ValueTuple/4.5.0": {}
@@ -251,6 +273,13 @@
       "sha512": "sha512-7B0upgJUTJ7fIwFjGEIxOMVJTxqBPyjtnua5i+VyClvHJd31t64SPIm4nhYxI7PF4afmvv5a3dtFCz1W1tQc0A==",
       "path": "automatonymous/5.1.3",
       "hashPath": "automatonymous.5.1.3.nupkg.sha512"
+    },
+    "Dapper/2.0.123": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "path": "dapper/2.0.123",
+      "hashPath": "dapper.2.0.123.nupkg.sha512"
     },
     "GreenPipes/4.0.1": {
       "type": "package",
@@ -399,6 +428,13 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
+    "Npgsql/6.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yt/3XFRhHsJ01a4+qHM9+0mtitQ3DY2wJLyGP9vtvZa1cB1nSAw762GJGdSX3Bbc7wZKzeo4dc4drD3yvQe7gA==",
+      "path": "npgsql/6.0.3",
+      "hashPath": "npgsql.6.0.3.nupkg.sha512"
+    },
     "RabbitMQ.Client/6.2.2": {
       "type": "package",
       "serviceable": true,
@@ -461,6 +497,13 @@
       "sha512": "sha512-a4OLB4IITxAXJeV74MDx49Oq2+PsF6Sml54XAFv+2RyWwtDBcabzoxiiJRhdhx+gaohLh4hEGCLQyBozXoQPqA==",
       "path": "system.reflection.emit.lightweight/4.7.0",
       "hashPath": "system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
     "System.Text.Json/5.0.2": {
       "type": "package",

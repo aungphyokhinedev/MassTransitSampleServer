@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
             "MassTransit.Analyzers": {
               "target": "Package",
               "version": "[7.2.2, )"
@@ -49,6 +53,10 @@
             "MassTransit.RabbitMQ": {
               "target": "Package",
               "version": "[7.3.1, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
