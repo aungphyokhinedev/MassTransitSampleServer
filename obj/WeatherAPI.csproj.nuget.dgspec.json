@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/WeatherAPI.csproj": {}
+    "D:\\project\\MassTransitSampleServer\\WeatherAPI.csproj": {}
   },
   "projects": {
-    "/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/WeatherAPI.csproj": {
+    "D:\\project\\MassTransitSampleServer\\WeatherAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/WeatherAPI.csproj",
+        "projectUniqueName": "D:\\project\\MassTransitSampleServer\\WeatherAPI.csproj",
         "projectName": "WeatherAPI",
-        "projectPath": "/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/WeatherAPI.csproj",
-        "packagesPath": "/home/aung/.nuget/packages/",
-        "outputPath": "/home/aung/Projects/MassTransitMediator/MassTransitSampleServer/obj/",
+        "projectPath": "D:\\project\\MassTransitSampleServer\\WeatherAPI.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\MassTransitSampleServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/aung/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/152/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

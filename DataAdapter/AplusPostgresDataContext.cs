@@ -56,4 +56,27 @@ public class AplusPostgresDataContext : IAplusDataContext
         } 
         
     }
+
+    public async Task<AplusCreateResponse> GetListAsync(AplusCreateRequest<T> request)
+    { 
+        using (var connection = new NpgsqlConnection("Host=54.169.8.73;Username=postgres;Password=newpassword;Database=aplus")) 
+        { 
+                connection.Open(); 
+              
+                string query = @"WITH rows AS (
+                    INSERT INTO user
+                        (login, password, name)
+                    VALUES
+                        ('dealer1', 'jygbjybk', 'Dealer 1')
+                    RETURNING id
+                )
+                INSERT INTO dealer (user_id)
+                    SELECT id
+                    FROM rows
+                    RETURNING id;";
+                    
+            var res = conn.Execute(query);  
+        }
+
+    }
 }

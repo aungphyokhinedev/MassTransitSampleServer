@@ -38,3 +38,17 @@ namespace WeatherAPI.Controllers
         }
     }
 }
+
+public class User{
+    public string NRC {get;set;}
+    public string Mobile_no {get;set;}
+    public string Email {get;set;}
+    public string PIN {get;set;}
+    public string UserType {get;set;}
+    public string Referer {get;set;}
+
+    public string Status {get;set;}
+    public string DeviceId {get;set;}
+
+    public bool DeleteFlag{get;set;}
+}

@@ -1,8 +1,8 @@
 public class AplusListRequest {
 
    public AplusListRequest( string tables, int page = 1, int pageSize = 10, string fields = "*" ){
-       this.page = page;
-       this.pageSize = pageSize.IsPositiveNumber() ? pageSize : 1;
+       this.page = page.IsPositiveNumber() ? pageSize : 1;
+       this.pageSize = pageSize.IsPositiveNumber() ? pageSize : 10;
        this.fields = fields;
        this.tables = tables;
    }    
