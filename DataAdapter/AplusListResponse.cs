@@ -1,4 +1,4 @@
-public class AplusListResponse {
+public class AplusListResponse : IAplusResponse{
 
     public int page {get;set;}
     public int pageSize{get;set;}

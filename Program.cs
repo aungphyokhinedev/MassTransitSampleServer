@@ -3,7 +3,7 @@ using System.Reflection;
 using WeatherAPI;
 
 var builder = WebApplication.CreateBuilder(args);
-
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 builder.Services.AddSingleton<IAplusDataContext,AplusPostgresDataContext>();
 
 builder.Services.AddMassTransit(x =>
